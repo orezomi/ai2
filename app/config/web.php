@@ -11,6 +11,7 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
         ],
+        'rbac' => 'dektrium\rbac\RbacWebModule',
     ],
     'components' => [
         'request' => [
