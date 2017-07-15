@@ -13,8 +13,18 @@ $config = [
             'admins' => ['admin'],
         ],
         'rbac' => 'dektrium\rbac\RbacWebModule',
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
     ],
     'components' => [
+        'view' => [
+             'theme' => [
+                 'pathMap' => [
+                    '@app/views' => '@app/views/adminlte'
+                 ],
+             ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'qylnHC23ESWf6xm1tr9Y9HgpcJg79EqS',
