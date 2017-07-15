@@ -1,11 +1,12 @@
 <?php
-use backend\assets\AppAsset;
+use app\assets\Layerslider;
 use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 dmstr\web\AdminLteAsset::register($this);
+Layerslider::register($this);
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
 ?>
 <?php $this->beginPage() ?>
@@ -20,16 +21,16 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
 </head>
 <body>
 <?php $this->beginBody() ?>
-	<div class="hold-transition skin-blue sidebar-collapse">
+	<div class="hold-transition skin-purple-light sidebar-collapse">
 		<?= $this->render(
 	        'header1.php',
 	        ['directoryAsset' => $directoryAsset]
 	    ) ?>
 	    <?= $this->render(
-	        'content.php',
+	        'content1.php',
 	        [
 	        	'directoryAsset' => $directoryAsset,
-	        	'content' => $content
+	        	'content' => $content 
 	        ]
 	    ) ?>
 	</div>
