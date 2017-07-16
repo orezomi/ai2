@@ -14,7 +14,7 @@ $this->title = 'All Indonesia Photo Blog';
         </div>
      
         <!-- Second slide -->
-        <div class="ls-slide" data-ls="duration: 4000; transition3d: all;">
+        <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
             <!-- Slide background image of the second slide -->
             <img src="images/slide-2.jpg" class="ls-bg" alt="Slide background">
         </div>
@@ -30,8 +30,7 @@ $this->title = 'All Indonesia Photo Blog';
 <?php
 $js = <<<JS
     $('#layerslider').layerSlider({
-        skin: 'borderlessdark3d',
-        plugins: ['origami']
+        skin: 'borderlessdark'
     });
 JS;
 $this->registerJs($js);
