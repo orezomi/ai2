@@ -30,7 +30,7 @@ $this->title = 'All Indonesia Photo Blog';
 <?php
 $js = <<<JS
     $('#layerslider').layerSlider({
-        skin: 'borderlessdark'
+        skin: 'borderlesslight'
     });
 JS;
 $this->registerJs($js);
