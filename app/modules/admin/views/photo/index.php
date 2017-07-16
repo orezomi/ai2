@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
         
             <p>
-                <?= Html::button('<i class="fa fa-plus"></i> &nbsp; Create Photo', ['class' => 'btn btn-success input-data btn-sm','value'=>Url::to(['create'])]) ?>
+                <?= Html::button('<i class="glyphicon glyphicon-plus"></i> &nbsp; Create Photo', ['class' => 'btn btn-success input-data btn-xs','value'=>Url::to(['create'])]) ?>
             </p>
                             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
