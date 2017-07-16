@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+.select2-container--krajee .select2-selection--single{
+    padding-top: 10px;
+}
+
 .wrap {
     min-height: 100%;
     height: auto;

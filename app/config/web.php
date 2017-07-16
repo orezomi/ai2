@@ -17,8 +17,14 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Module',
         ],
+        'treemanager' =>  [
+            'class' => '\kartik\tree\Module',
+        ]
     ],
     'components' => [
+        'global' => [
+            'class' => 'app\modules\admin\components\Orezomi',
+        ],
         'view' => [
              'theme' => [
                  'pathMap' => [
