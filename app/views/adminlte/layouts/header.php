@@ -17,21 +17,30 @@ use yii\bootstrap\NavBar;
             <span class="sr-only">Toggle navigation</span>
         </a>
         <div class="navbar-custom-menu">
+            <?php
+                $staticMenu = [
+                    ['label' => 'About', 'url' => ['/site/about']],
+                    ['label' => 'Contact', 'url' => ['/site/contact']]
+                ];
+                $menu = array_merge(
+                    Yii::$app->global->menuItems(['menuPosition'=>'top'])?Yii::$app->global->menuItems(['menuPosition'=>'top']):[],
+                    [
+                    Yii::$app->user->isGuest ? (
+                            ['label' => '<span class="fa fa-power-off"></span>', 'url' => ['/user/security/login']]
+                        ) : (
+                            '<li>'
+                            . Html::a('<span class="fa fa-power-off"></span>', ['/user/security/logout'], ['data' => ['method' => 'post'],'class' => 'bg-black'])
+                            . '</li>'
+                        )
+                    ]
+                );
+
+                $semuaMenu = array_merge($staticMenu,$menu);
+            ?>
             <?=Nav::widget([
                 'options' => ['class' => 'navbar-nav'],
                 'encodeLabels' => false,
-                'items' => array_merge(
-                        Yii::$app->global->menuItems(['menuPosition'=>'top'])?Yii::$app->global->menuItems(['menuPosition'=>'top']):[],
-                        [
-                        Yii::$app->user->isGuest ? (
-                                ['label' => 'Login', 'url' => ['/user/security/login']]
-                            ) : (
-                                '<li>'
-                                . Html::a('<span class="fa fa-power-off"></span>', ['/user/security/logout'], ['data' => ['method' => 'post'],'class' => 'bg-black'])
-                                . '</li>'
-                            )
-                        ]
-                    ),
+                'items' => $semuaMenu,
                 ]);
             ?>
         </div>

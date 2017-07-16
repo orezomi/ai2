@@ -11,7 +11,7 @@ use yii\captcha\Captcha;
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="box box-success">
+<div class="box box-danger">
     <div class="box-body">
         <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
