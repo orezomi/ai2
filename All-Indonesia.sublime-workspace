@@ -485,19 +485,43 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/harismoaji/Documents/htdocs/ai2/app"
+		"/Users/harismoaji/Documents/htdocs/ai2/app",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/site",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/layouts",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web/layerslider/skins/borderlessdark",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web/layerslider/skins/borderlessdark3d"
 	],
 	"file_history":
 	[
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/index.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/main.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/.gitignore",
+		"/Users/harismoaji/Documents/htdocs/layerslider/examples/simple_slider.html",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content1.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header1.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/assets/AppAsset.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/assets/Layerslider.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/layouts/main.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/left.php",
+		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/286127cf-ceba-4574-a42a-ce2b26d4841f/home/aji/ai2/app/web/index.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/site/login.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/contact.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/main-login.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/composer.json",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/config/console.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/dektrium/yii2-user/models/UserSearch.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/286127cf-ceba-4574-a42a-ce2b26d4841f/home/aji/ai2/app/vendor/dektrium/yii2-user/models/UserSearch.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/config/params.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/yiisoft/yii2/db/Connection.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/config/db.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/.gitignore",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/286127cf-ceba-4574-a42a-ce2b26d4841f/home/aji/ai2/app/config/db.php",
 		"/Users/harismoaji/Documents/htdocs/simpeg/app/composer.json",
 		"/Users/harismoaji/Documents/htdocs/multirate2/multirate/app/controllers/KomposisiController.php",
@@ -600,27 +624,11 @@
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/views/layouts/main.php",
 		"/Users/harismoaji/Documents/INTERNET MARKETING/WP-ROBOT/WPRobot3/modules/flickr.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/web/js/prevent_double_click.js",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/views/post/go.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/models/Token.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/poster/index1.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/poster/index.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/poster/index (9:19:16, 18:31).php",
-		"/Users/harismoaji/Documents/INTERNET MARKETING/FB/jos.txt",
-		"/Users/harismoaji/Documents/INTERNET MARKETING/WP-ROBOT/WPRobot3/modules/amazon.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/web/js/main.js",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/web/index.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/config/console.php",
-		"/Users/harismoaji/Documents/INTERNET MARKETING/FB/index.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/poster/index.php-d6ff249a-c39d-4d33-920c-e698f44c4204",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/poster/index.php-47961796-5451-4403-824f-24ca81b7f99c",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/vendor/yiisoft/yii2-authclient/clients/Facebook.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/vendor/dektrium/yii2-user/models/LoginForm.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/vendor/dektrium/yii2-user/controllers/SecurityController.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/vendor/dektrium/yii2-user/models/Token.php"
+		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/6f162b81-2ea7-4b15-82af-a27818842672/var/www/fb.ruangdesain.com/htdocs/fbapp/views/post/go.php"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -634,6 +642,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"content",
 			"modules",
 			"p://all-",
 			"kompo",
@@ -760,8 +769,7 @@
 			"author.name",
 			"awayTeam0",
 			"dev",
-			"'",
-			"\""
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,

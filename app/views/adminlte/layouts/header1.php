@@ -13,8 +13,11 @@ use yii\helpers\Html;
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
                 <!-- User Account: style can be found in dropdown.less -->
-                <li class="bg-orange">
-                    <a href="#"><i class="fa fa-power-off"></i></a>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li>
+                    <a href="#" class="bg-black"><i class="fa fa-power-off"></i></a>
                 </li>
             </ul>
         </div>

@@ -5,7 +5,7 @@
 $this->title = 'All Indonesia Photo Blog';
 ?>
 <div class="site-index">
-    <div id="layerslider" style="width: 800px; height: 400px;">
+    <div id="layerslider" class="fullsize" style="width:1200px;height:600vh;">
  
         <!-- First slide -->
         <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
@@ -17,6 +17,12 @@ $this->title = 'All Indonesia Photo Blog';
         <div class="ls-slide" data-ls="duration: 4000; transition3d: all;">
             <!-- Slide background image of the second slide -->
             <img src="images/slide-2.jpg" class="ls-bg" alt="Slide background">
+        </div>
+
+        <!-- Second slide -->
+        <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
+            <!-- Slide background image of the second slide -->
+            <img src="images/slide-3.jpg" class="ls-bg" alt="Slide background">
         </div>
     </div>
 </div>

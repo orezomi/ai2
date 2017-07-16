@@ -21,7 +21,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
 </head>
 <body>
 <?php $this->beginBody() ?>
-	<div class="hold-transition skin-purple-light sidebar-collapse">
+	<div class="hold-transition skin-black-light sidebar-collapse">
 		<?= $this->render(
 	        'header1.php',
 	        ['directoryAsset' => $directoryAsset]
