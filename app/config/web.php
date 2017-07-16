@@ -21,6 +21,9 @@ $config = [
         ],
         'treemanager' =>  [
             'class' => '\kartik\tree\Module',
+        ],
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module'
         ]
     ],
     'components' => [
@@ -87,6 +90,12 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'generators' => [
+            'crud'   => [
+                'class'     => 'yii\gii\generators\crud\Generator',
+                'templates' => ['mycrud' => '@app/template/mycrud']
+            ]
+        ],
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
