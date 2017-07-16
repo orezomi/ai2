@@ -12,6 +12,8 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
             'admins' => ['admin'],
+            'enableConfirmation' => false,
+            'enableRegistration' => false
         ],
         'rbac' => 'dektrium\rbac\RbacWebModule',
         'admin' => [
@@ -28,7 +30,9 @@ $config = [
         'view' => [
              'theme' => [
                  'pathMap' => [
-                    '@app/views' => '@app/views/adminlte'
+                    '@app/views' => '@app/views/adminlte',
+                    '@dektrium/user/views' => '@app/views/user',
+                    '@dektrium/rbac/views' => '@app/views/rbac'
                  ],
              ],
         ],

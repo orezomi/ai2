@@ -82,7 +82,6 @@ class SettingsController extends Controller
             $config['theme'] = $model->theme;
             $config['appTitleLong']= $model->appTitleLong;
             $config['appTitleShort']= $model->appTitleShort;
-            $config['orgLevel']= $model->orgLevel;
 
             $model->active = 0;
 
@@ -113,7 +112,6 @@ class SettingsController extends Controller
             $config['theme'] = $model->theme;
             $config['appTitleLong']= $model->appTitleLong;
             $config['appTitleShort']= $model->appTitleShort;
-            $config['orgLevel']= $model->orgLevel;
 
             $model->config = json_encode($config);
 

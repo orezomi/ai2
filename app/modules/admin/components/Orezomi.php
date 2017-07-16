@@ -62,7 +62,7 @@ class Orezomi extends Component {
 
         $items=[];
         foreach ($roots as $key=>$root) {
-            $items[$key]['label'] = $params['menuPosition']!=='top'?$root->name:Html::tag('span','',['class'=>$root->icon]);
+            $items[$key]['label'] = $params['menuPosition']!=='top'?$root->name:Html::tag('span','',['class'=>'fa fa-'.$root->icon]);
             $items[$key]['icon']=$root->icon;
             $items[$key]['url']=[$root->action];
             $items[$key]['visible']=array_key_exists($root->permission,$permissions)?true:false;

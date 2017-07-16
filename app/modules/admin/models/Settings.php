@@ -20,7 +20,6 @@ class Settings extends \yii\db\ActiveRecord
     public $theme;
     public $appTitleLong;
     public $appTitleShort;
-    public $orgLevel;
 
 
     public static function tableName()
@@ -34,9 +33,9 @@ class Settings extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['n_setting', 'config', 'active','theme','appTitleShort','appTitleLong','orgLevel'], 'required'],
+            [['n_setting', 'config', 'active','theme','appTitleShort','appTitleLong'], 'required'],
             [['config'], 'string'],
-            [['active','orgLevel'], 'integer'],
+            [['active'], 'integer'],
             [['n_setting'], 'string', 'max' => 50],
             [['appTitleShort','appTitleLong'],'safe'],
         ];
@@ -55,7 +54,6 @@ class Settings extends \yii\db\ActiveRecord
             'theme' => 'Theme',
             'appTitleShort'=>'Short Title',
             'appTitleLong'=>'Long Title',
-            'orgLevel'=>'Org Level',
         ];
     }
 }

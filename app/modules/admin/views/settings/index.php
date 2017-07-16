@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'headerOptions' => ['style' => 'width:40px;'],
                     'buttons' => [
                         'active' => function($url,$model,$key){
-                            $url = Url::to(['/settings/activate','id'=>$model->i_setting]);
+                            $url = Url::to(['activate','id'=>$model->i_setting]);
                             $link = Html::a('<span class="fa fa-close"></span>',$url,[
                                     'class'=>'activate',
                                     // 'value'=>$url,
@@ -53,16 +53,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 [
                     'class' => 'yii\grid\ActionColumn',
-                    'template' => '{view}{update}{delete}',
+                    'template' => '{view} {update} {delete}',
                     'headerOptions' => ['style' => 'width:100px;'],
                     'buttons' => [
                         'view' => function($url,$model,$key){
-                            $url = Url::to(['/settings/view','id'=>$model->i_setting]);
+                            $url = Url::to(['view','id'=>$model->i_setting]);
                             $link = Html::button('<span class="glyphicon glyphicon-eye-open"></span>',['class'=>'btn btn-xs btn-success viewButton','value'=>$url,'title'=>'View']);
                             return $link;
                         },
                         'update' => function($url,$model,$key){
-                            $url = Url::to(['/settings/update','id'=>$model->i_setting]);
+                            $url = Url::to(['update','id'=>$model->i_setting]);
                             $link = Html::button('<span class="glyphicon glyphicon-pencil"></span>',['class'=>'btn btn-xs btn-warning updateButton','value'=>$url,'title'=>'Edit']);
                             return $link;
                         },

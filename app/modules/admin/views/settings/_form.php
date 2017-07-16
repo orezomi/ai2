@@ -45,9 +45,6 @@ $const = [
     <?php $appTitleShort = !$model->isNewRecord?(array_key_exists('appTitleShort', $config)?$config['appTitleShort']:null):null;?>
     <?= $form->field($model, 'appTitleShort')->textInput(['value'=>$appTitleShort]) ?>
 
-    <?php $org = !$model->isNewRecord?(array_key_exists('orgLevel',$config)?$config['orgLevel']:null):null;?>
-    <?= $form->field($model,'orgLevel')->dropDownList([1=>1,2=>2,3=>3,4=>4],['prompt'=>'- Org Level -','value'=>$org])?>
-
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

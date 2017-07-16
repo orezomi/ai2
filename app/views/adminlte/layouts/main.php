@@ -1,5 +1,7 @@
 <?php
 use yii\helpers\Html;
+use yii\bootstrap\Modal;
+use app\models\Settings;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -57,6 +59,16 @@ if (Yii::$app->controller->action->id === 'login') {
         ) ?>
 
     </div>
+
+    <?php 
+    Modal::begin([
+            'header'=>'<h4>Data</h4>',
+            'id'=>'modal',
+            'size'=>'modal-lg',
+        ]);
+        echo "<div id='modalContent'></div>";
+        Modal::end();
+    ?>
 
     <?php $this->endBody() ?>
     </body>
