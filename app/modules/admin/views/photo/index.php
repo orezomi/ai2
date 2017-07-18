@@ -27,13 +27,32 @@ $this->params['breadcrumbs'][] = $this->title;
                 'hover' => true,
                 'striped' => true,
                 'responsive' => false,
-                'filterModel' => $searchModel,
+                // 'filterModel' => $searchModel,
                 'columns' => [
                     ['class' => 'yii\grid\SerialColumn'],
-
-                    // 'id_photo',
-                    'metadata:ntext',
-
+                    [
+                        'header'=>'Image',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            return Html::img('images/logo.png',['alt'=>'tes','title'=>'test too','class'=>'thumbnail']);
+                        }
+                    ],
+                    [
+                        'header'=>'Title',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return $metadata['title'];
+                        }
+                    ],
+                    [
+                        'header'=>'Alt',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return $metadata['alt'];
+                        }
+                    ],
                     [
                         'class' => 'yii\grid\ActionColumn',
                         'template' => '{view} {update} {delete}',

@@ -15,6 +15,11 @@ class Photo extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+
+    public $title;
+    public $file;
+    public $alt;
+
     public static function tableName()
     {
         return 'photo';
@@ -26,8 +31,8 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['metadata'], 'required'],
-            [['metadata'], 'string'],
+            [['metadata','title','file','alt'], 'required'],
+            [['metadata','title','file','alt'], 'string'],
         ];
     }
 
@@ -39,6 +44,9 @@ class Photo extends \yii\db\ActiveRecord
         return [
             'id_photo' => 'Id Photo',
             'metadata' => 'Metadata',
+            'title' => 'Title',
+            'file' => 'File',
+            'alt' => 'Alt Text',
         ];
     }
 }

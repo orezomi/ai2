@@ -76,8 +76,17 @@ class PhotoController extends Controller
     {
         $model = new Photo();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
+        if ($model->load(Yii::$app->request->post())) {
+
+            $metadata['title'] = $model->title;
+            $metadata['file'] = $model->file;
+            $metadata['alt'] = $model->alt;
+
+            $model->metadata = json_encode($metadata);
+
+            if ($model->save()) {
+                return $this->redirect(['index']);
+            }
         } else {
             return $this->renderAjax('create', [
                 'model' => $model,
@@ -95,11 +104,22 @@ class PhotoController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['index']);
+        if ($model->load(Yii::$app->request->post())) {
+
+            $metadata['title'] = $model->title;
+            $metadata['file'] = $model->file;
+            $metadata['alt'] = $model->alt;
+
+            $model->metadata = json_encode($metadata);
+
+            if ($model->save()) {
+                return $this->redirect(['index']);
+            }
         } else {
+            $metadata = json_decode($model->metadata,true);
             return $this->renderAjax('update', [
                 'model' => $model,
+                'metadata' => $metadata,
             ]);
         }
     }
