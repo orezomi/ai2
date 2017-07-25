@@ -9,7 +9,7 @@ $this->title = 'All Indonesia Photo Blog';
         <?php
             foreach ($photoArray as $key => $value) {
         ?>
-        <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
+        <div class="ls-slide" data-ls="duration: 4000; transition2d: 48;">
             <!-- Slide background image of the first slide -->
             <img src="<?='images/'.$key.'_'.$value['file'].''?>" class="ls-bg" alt="Slide background">
             <h1 class="ls-layer" style="top: 80%; left: 50%; color:white;"><?=$value['title']?></h1>

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"photo",
+				"photoArray"
+			],
+			[
+				"old",
+				"oldFile"
+			],
+			[
 				"im",
 				"imageFile"
 			],
@@ -499,23 +507,25 @@
 	[
 		"/Users/harismoaji/Documents/htdocs/ai2/app",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/components",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web"
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images/small",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images/thumb"
 	],
 	"file_history":
 	[
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Photo.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/index.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/view.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/PhotoController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/_form.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Photo.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/index.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/index.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/view.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/test.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Settings.php",
@@ -523,7 +533,6 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/update.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/settings/_form.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content2.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain2.php",
@@ -557,7 +566,6 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/user/admin/update.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/user/admin/create.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/site/login.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/index.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Menu.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/menu/_customAttributes.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/menu/index.php",
@@ -656,6 +664,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"alt",
+			"$metadata['title'] = $model->title;\n            $metadata['alt'] = $model->alt;\n            $metadata['file'] = $model->file;",
 			"imageFile",
 			"this",
 			"file",
@@ -781,9 +791,7 @@
 			"<?",
 			"?>",
 			"<?=",
-			"},",
-			"10px",
-			"grey"
+			"},"
 		],
 		"highlight": true,
 		"in_selection": false,
