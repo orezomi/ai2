@@ -5,25 +5,19 @@
 $this->title = 'All Indonesia Photo Blog';
 ?>
 <div class="site-index">
-    <div id="layerslider" class="fullsize" style="width:1200px;height:600vh;">
- 
-        <!-- First slide -->
+    <div id="layerslider" class="fullsize" style="width:1600px;height:900vh;">
+        <?php
+            foreach ($photoArray as $key => $value) {
+        ?>
         <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
             <!-- Slide background image of the first slide -->
-            <img src="images/slide-1.jpg" class="ls-bg" alt="Slide background">
+            <img src="<?='images/'.$key.'_'.$value['file'].''?>" class="ls-bg" alt="Slide background">
+            <h1 class="ls-layer" style="top: 80%; left: 50%; color:white;"><?=$value['title']?></h1>
+            <p class="ls-layer" style="top: 84%; left: 50%; color:white;"><?=$value['desc']?></p>
         </div>
-     
-        <!-- Second slide -->
-        <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
-            <!-- Slide background image of the second slide -->
-            <img src="images/slide-2.jpg" class="ls-bg" alt="Slide background">
-        </div>
-
-        <!-- Second slide -->
-        <div class="ls-slide" data-ls="duration: 4000; transition2d: all;">
-            <!-- Slide background image of the second slide -->
-            <img src="images/slide-3.jpg" class="ls-bg" alt="Slide background">
-        </div>
+        <?php 
+            }
+        ?>
     </div>
 </div>
 

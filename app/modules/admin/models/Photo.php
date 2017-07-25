@@ -1,6 +1,8 @@
 <?php
 
 namespace app\modules\admin\models;
+use yii\imagine\Image;
+
 
 use Yii;
 
@@ -16,9 +18,11 @@ class Photo extends \yii\db\ActiveRecord
      * @inheritdoc
      */
 
-    public $title;
+    public $title; 
     public $file;
     public $alt;
+    public $imageFile;
+    public $desc;
 
     public static function tableName()
     {
@@ -31,7 +35,9 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['metadata','title','file','alt'], 'required'],
+            [['metadata','title','alt','desc'], 'required'],
+            [['file'], 'required', 'on' => 'create'],
+            [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg'],
             [['metadata','title','file','alt'], 'string'],
         ];
     }
@@ -47,6 +53,28 @@ class Photo extends \yii\db\ActiveRecord
             'title' => 'Title',
             'file' => 'File',
             'alt' => 'Alt Text',
+            'desc' => 'Description',
         ];
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) {
+
+            $main = 'images/'.$this->id_photo.'_'. $this->imageFile->baseName . '.' . $this->imageFile->extension;
+            $small = 'images/small/'.$this->id_photo.'_'. $this->imageFile->baseName . '.' . $this->imageFile->extension;
+            $thumb = 'images/thumb/'.$this->id_photo.'_'. $this->imageFile->baseName . '.' . $this->imageFile->extension;
+
+            $this->imageFile->saveAs($main);
+
+            Image::thumbnail('@webroot/'.$main, 160, 120)->save(Yii::getAlias('@webroot/'.$thumb), ['quality' => 100]);
+
+            Image::thumbnail('@webroot/'.$main, 600, 400)->save(Yii::getAlias('@webroot/'.$small), ['quality' => 100]);
+
+
+            return true;
+        } else {
+            return false;
+        }
     }
 }

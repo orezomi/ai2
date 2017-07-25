@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"im",
+				"imageFile"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"meta",
+				"metadata"
+			],
+			[
 				"se",
 				"semuaMenu"
 			],
@@ -90,10 +102,6 @@
 			[
 				"load",
 				"loaded"
-			],
-			[
-				"json",
-				"json_encode"
 			],
 			[
 				"po",
@@ -490,29 +498,30 @@
 	"expanded_folders":
 	[
 		"/Users/harismoaji/Documents/htdocs/ai2/app",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/assets",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/components",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/settings",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/template/mycrud/views",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/layouts",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/rbac/permission",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/user/admin",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/user/security",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/css",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/js",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/layerslider/skins"
+		"/Users/harismoaji/Documents/htdocs/ai2/app/web"
 	],
 	"file_history":
 	[
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Photo.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/index.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/view.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/PhotoController.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/_form.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/test.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Settings.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/SettingsController.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/update.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/settings/_form.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain.php",
@@ -522,13 +531,9 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app/assets/AppAsset.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/main.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/template/mycrud/views/index.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Settings.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/settings/index.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/settings/_form.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/SettingsController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/about.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/contact.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/template/mycrud/controller.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/MenuController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/components/Orezomi.php",
@@ -633,13 +638,7 @@
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/error_log",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-config.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/js/gmap.js",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/header.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/footer.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/style.css",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/function.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/ozbs/index.php",
-		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/ozbs/style.css",
-		"/Users/harismoaji/Desktop/test.html"
+		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/b61881ff-6a06-4d0a-b828-1c140bc72c9a/wp-content/themes/bootstraptheme/header.php"
 	],
 	"find":
 	{
@@ -657,6 +656,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"imageFile",
+			"this",
+			"file",
+			"imageFile",
+			"config",
+			"title",
+			"$config",
+			"appTitleShort",
+			"$config",
 			"fa",
 			"&gt;",
 			"&lt;",
@@ -775,16 +783,7 @@
 			"<?=",
 			"},",
 			"10px",
-			"grey",
-			"a:",
-			"&nbsp;",
-			"id",
-			"}",
-			"{",
-			"}",
-			"{",
-			"despIds",
-			"author_id"
+			"grey"
 		],
 		"highlight": true,
 		"in_selection": false,

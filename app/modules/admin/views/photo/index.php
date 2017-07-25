@@ -15,12 +15,12 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-danger">
     <div class="box-body">
-                    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+            <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
         
             <p>
                 <?= Html::button('<i class="glyphicon glyphicon-plus"></i> &nbsp; Create Photo', ['class' => 'btn btn-success input-data btn-xs','value'=>Url::to(['create'])]) ?>
             </p>
-                            <?= GridView::widget([
+            <?= GridView::widget([
                 'dataProvider' => $dataProvider,
                 'condensed' => true,
                 'bordered' => false,
@@ -34,7 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         'header'=>'Image',
                         'format'=>'raw',
                         'value'=>function($model){
-                            return Html::img('images/logo.png',['alt'=>'tes','title'=>'test too','class'=>'thumbnail']);
+                            $metadata = json_decode($model->metadata,true);
+                            return Html::img('images/thumb/'.$model->id_photo.'_'.$metadata['file'],['alt'=>$metadata['alt'],'title'=>$metadata['title'],'class'=>'thumbnail']);
                         }
                     ],
                     [
@@ -46,11 +47,27 @@ $this->params['breadcrumbs'][] = $this->title;
                         }
                     ],
                     [
+                        'header'=>'File',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return $metadata['file'];
+                        }
+                    ],
+                    [
                         'header'=>'Alt',
                         'format'=>'raw',
                         'value'=>function($model){
                             $metadata = json_decode($model->metadata,true);
                             return $metadata['alt'];
+                        }
+                    ],
+                    [
+                        'header'=>'Desc',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return $metadata['desc'];
                         }
                     ],
                     [
@@ -83,6 +100,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     ],
                 ],
             ]); ?>
-                    </div>
+            </div>
 
 </div>

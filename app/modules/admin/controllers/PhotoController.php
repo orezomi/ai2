@@ -9,11 +9,12 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\web\UploadedFile;
 
 /**
  * PhotoController implements the CRUD actions for Photo model.
  */
-class PhotoController extends Controller
+class PhotoController extends Controller 
 {
     /**
      * @inheritdoc
@@ -62,8 +63,10 @@ class PhotoController extends Controller
      */
     public function actionView($id)
     {
+        $model = $this->findModel($id);
         return $this->renderAjax('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
+            'metadata' => json_decode($model->metadata,true),
         ]);
     }
 
@@ -75,17 +78,27 @@ class PhotoController extends Controller
     public function actionCreate()
     {
         $model = new Photo();
+        $model->scenario = 'create';
 
         if ($model->load(Yii::$app->request->post())) {
 
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+
+            $model->file = UploadedFile::getInstance($model, 'imageFile')->name;
+
             $metadata['title'] = $model->title;
-            $metadata['file'] = $model->file;
+            $metadata['file'] = UploadedFile::getInstance($model, 'imageFile')->name;
             $metadata['alt'] = $model->alt;
+            $metadata['desc'] = $model->desc;
+
+
 
             $model->metadata = json_encode($metadata);
 
             if ($model->save()) {
-                return $this->redirect(['index']);
+                if ($model->upload()) {
+                    return $this->redirect(['index']);
+                }
             }
         } else {
             return $this->renderAjax('create', [
@@ -103,16 +116,32 @@ class PhotoController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $oldData = json_decode($model->metadata,true);
+        $oldFile = $model->id_photo.'_'.$oldData['file'];
 
         if ($model->load(Yii::$app->request->post())) {
 
             $metadata['title'] = $model->title;
-            $metadata['file'] = $model->file;
             $metadata['alt'] = $model->alt;
+            $metadata['file'] = $model->file;
+            $metadata['desc'] = $model->desc;
+            $imageFile = UploadedFile::getInstance($model, 'imageFile');
+
+            if ($imageFile) {
+                $model->imageFile = $imageFile;
+                $metadata['file'] = $imageFile->name;
+            }
 
             $model->metadata = json_encode($metadata);
 
             if ($model->save()) {
+                if ($imageFile && $model->upload()) {
+                    $location = Yii::getAlias('@webroot/images/');
+                    file_exists($location.$oldFile)?unlink($location.$oldFile):false;
+                    file_exists($location.'thumb/'.$oldFile)?unlink($location.'thumb/'.$oldFile):false;
+                    file_exists($location.'small/'.$oldFile)?unlink($location.'small/'.$oldFile):false;
+                    return $this->redirect(['index']);
+                }
                 return $this->redirect(['index']);
             }
         } else {

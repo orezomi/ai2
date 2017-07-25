@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\modules\admin\models\Photo;
 
 class SiteController extends Controller
 {
@@ -62,7 +63,18 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = 'plain';
-        return $this->render('index');
+
+        $photos = Photo::find()->all();
+
+        $photoArray = [];
+
+        foreach ($photos as $photo) {
+            $photoArray[$photo->id_photo]=json_decode($photo->metadata,true);
+        }
+
+        return $this->render('index',[
+            'photoArray'=>$photoArray
+        ]);
     }
 
     /**

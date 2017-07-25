@@ -12,12 +12,24 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="box box-info">
     <div class="box-body">
+    <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%'])?>
 
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id_photo',
-            'metadata:ntext',
+            [
+            	'attribute'=>'metadata',
+            	'format'=>'raw',
+            	'value'=>function($model) use ($metadata){
+            		
+            		return '
+						<b>Title</b> : '.$metadata['title'].'<br/>
+						<b>File</b> : '.$model->id_photo.'_'.$metadata['file'].'<br/>
+						<b>Alt</b> : '.$metadata['alt'].'
+            		';
+            	}
+            ]
         ],
     ]) ?>
 
