@@ -2,10 +2,14 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\Select2;
+use yii\helpers\ArrayHelper;
+use app\modules\admin\models\Tags;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Photo */
 /* @var $form yii\widgets\ActiveForm */
+$data = ArrayHelper::map(Tags::find()->all(),'tag','tag');
 ?>
 
 <div class="photo-form">
@@ -30,6 +34,26 @@ use yii\widgets\ActiveForm;
 
     <?php $desc = !$model->isNewRecord?(array_key_exists('desc', $metadata)?$metadata['desc']:null):null;?>
     <?= $form->field($model, 'desc')->textArea(['value'=>$desc]) ?>
+
+    <?php 
+
+        if (!$model->isNewRecord) {
+            $model->tag = array_keys(ArrayHelper::map($model->tags,'tag','tag'));
+        }else{
+            $model->tag = [];
+        }
+
+    ?>
+    <?= $form->field($model, 'tag')->widget(Select2::classname(), [
+        'data' => $data,
+        'options' => ['placeholder' => 'Tags...','multiple'=>true],
+        'pluginOptions' => [
+            'allowClear' => true,
+            'tags' => true,
+            'tokenSeparators' => [',', ';'],
+            'maximumInputLength' => 10
+        ],
+    ]);?>
 
     <?= $form->field($model, 'imageFile')->fileInput() ?>
 

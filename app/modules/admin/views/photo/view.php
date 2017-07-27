@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -29,6 +30,13 @@ $this->params['breadcrumbs'][] = $this->title;
 						<b>Alt</b> : '.$metadata['alt'].'
             		';
             	}
+            ],
+            [
+                'attribute'=>'tags',
+                'format'=>'raw',
+                'value'=>function($model){
+                    return implode(', ',array_keys(ArrayHelper::map($model->tags,'tag','tag'))); 
+                }
             ]
         ],
     ]) ?>

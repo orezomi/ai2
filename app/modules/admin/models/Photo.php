@@ -23,6 +23,7 @@ class Photo extends \yii\db\ActiveRecord
     public $alt;
     public $imageFile;
     public $desc;
+    public $tag;
 
     public static function tableName()
     {
@@ -35,8 +36,8 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['metadata','title','alt','desc'], 'required'],
-            [['file'], 'required', 'on' => 'create'],
+            [['metadata','title','alt','desc','tag'], 'required'],
+            [['file','imageFile'], 'required', 'on' => 'create'],
             [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg'],
             [['metadata','title','file','alt'], 'string'],
         ];
@@ -54,6 +55,7 @@ class Photo extends \yii\db\ActiveRecord
             'file' => 'File',
             'alt' => 'Alt Text',
             'desc' => 'Description',
+            'tag' => 'Tags',
         ];
     }
 
@@ -76,5 +78,11 @@ class Photo extends \yii\db\ActiveRecord
         } else {
             return false;
         }
+    }
+
+    public function getTags()
+    {
+        // return $this->hasMany(PhotoTag::className(), ['id_tag' => 'id_tag']);
+        return $this->hasMany(Tags::className(), ['id_tag' => 'id_tag'])->viaTable('photoTag', ['id_photo' => 'id_photo']);
     }
 }

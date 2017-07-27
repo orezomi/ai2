@@ -5,11 +5,14 @@ namespace app\modules\admin\controllers;
 use Yii;
 use app\modules\admin\models\Photo;
 use app\modules\admin\models\PhotoSearch;
+use app\modules\admin\models\Tags;
+use app\modules\admin\models\PhotoTag;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\UploadedFile;
+use yii\helpers\ArrayHelper;
 
 /**
  * PhotoController implements the CRUD actions for Photo model.
@@ -82,6 +85,8 @@ class PhotoController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
 
+            $tags = $model->tag;
+
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
 
             $model->file = UploadedFile::getInstance($model, 'imageFile')->name;
@@ -97,6 +102,7 @@ class PhotoController extends Controller
 
             if ($model->save()) {
                 if ($model->upload()) {
+                    $this->linkTag($model,$tags);
                     return $this->redirect(['index']);
                 }
             }
@@ -121,6 +127,8 @@ class PhotoController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
 
+            $tags = $model->tag;
+
             $metadata['title'] = $model->title;
             $metadata['alt'] = $model->alt;
             $metadata['file'] = $model->file;
@@ -142,8 +150,13 @@ class PhotoController extends Controller
                     file_exists($location.'small/'.$oldFile)?unlink($location.'small/'.$oldFile):false;
                     return $this->redirect(['index']);
                 }
+
+                $this->unlinkTag($model,$tags);
+                $this->linkTag($model,$tags);
+
                 return $this->redirect(['index']);
             }
+
         } else {
             $metadata = json_decode($model->metadata,true);
             return $this->renderAjax('update', [
@@ -179,6 +192,41 @@ class PhotoController extends Controller
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+
+    protected function unlinkTag($model,$tags=[]){
+        $modelOldTags = array_keys(ArrayHelper::map($model->tags,'tag','tag'));
+        $newTag = $tags;
+        $result = array_diff($modelOldTags,$newTag);
+        foreach ($result as $res) {
+            $tag = Tags::find()->where(['tag'=>$res])->one();
+            if ($tag) {
+                $pt = PhotoTag::find()->where(['id_tag'=>$tag->id_tag,'id_photo'=>$model->id_photo])->one();
+                if ($pt) {
+                    // $model->unlink('tags',$tag);
+                    $pt->delete();
+                }
+            }
+            
+        }
+    }
+
+    protected function linkTag($model,$tags=[]){
+        // $model = $this->findModel($id);
+        foreach ($tags as $tag) {
+            $searchTag = Tags::find()->where(['tag'=>$tag])->one();
+            if (!$searchTag) {
+                $newTag = new Tags;
+                $newTag->tag = $tag;
+                $newTag->save();
+                $model->link('tags',$newTag);
+            }elseif($searchTag){
+                $pt = PhotoTag::find()->where(['id_tag'=>$searchTag->id_tag,'id_photo'=>$model->id_photo])->one();
+                if (!$pt) {
+                    $model->link('tags',$searchTag);
+                }
+            }
         }
     }
 }

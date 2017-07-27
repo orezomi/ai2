@@ -5,6 +5,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use kartik\export\ExportMenu;
 use kartik\grid\GridView;
+use app\modules\admin\models\Tags;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\modules\admin\models\PhotoSearch */
@@ -68,6 +69,23 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value'=>function($model){
                             $metadata = json_decode($model->metadata,true);
                             return $metadata['desc'];
+                        }
+                    ],
+                    [
+                        'header'=>'Tags',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            // $t = Tags::findOne(2);
+                            // $model->link('tags', $t);
+                            $tags = $model->tags;
+
+                            $ts=[];
+                            foreach ($tags as $tag) {
+                                $ts[]=$tag->tag;
+                            }
+                            
+                            return implode(', ', $ts);
+                            // return $t->tag;
                         }
                     ],
                     [

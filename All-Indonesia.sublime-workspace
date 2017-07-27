@@ -507,23 +507,16 @@
 	[
 		"/Users/harismoaji/Documents/htdocs/ai2/app",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/components",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images/small",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/web/images/thumb"
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site"
 	],
 	"file_history":
 	[
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/index.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/PhotoController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/_form.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Photo.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/index.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/index.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/view.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/config/web.php",
