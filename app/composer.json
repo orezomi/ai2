@@ -41,8 +41,15 @@
 
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1",
-        "codeception/specify": "~0.4.3"
+        "codeception/specify": "~0.4.3",
+        "orezomi/wmk": "@dev"
     },
+    "repositories":[
+        {
+            "type":"path",
+            "url":"/Users/harismoaji/Documents/htdocs/wookmark"
+        }
+    ],
     "config": {
         "process-timeout": 1800,
         "fxp-asset":{

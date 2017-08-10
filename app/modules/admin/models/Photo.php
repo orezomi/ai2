@@ -2,6 +2,9 @@
 
 namespace app\modules\admin\models;
 use yii\imagine\Image;
+use Imagine\Gd;
+use Imagine\Image\Box;
+use Imagine\Image\BoxInterface;
 
 
 use Yii;
@@ -71,7 +74,11 @@ class Photo extends \yii\db\ActiveRecord
 
             Image::thumbnail('@webroot/'.$main, 160, 120)->save(Yii::getAlias('@webroot/'.$thumb), ['quality' => 100]);
 
-            Image::thumbnail('@webroot/'.$main, 600, 400)->save(Yii::getAlias('@webroot/'.$small), ['quality' => 100]);
+            // Image::thumbnail('@webroot/'.$main, 600, 400)->save(Yii::getAlias('@webroot/'.$small), ['quality' => 100]);
+
+            $rootFolder = Yii::getAlias('@webroot');
+
+            Image::getImagine()->open($rootFolder.'/'.$main)->thumbnail(new Box(600, 400))->save($rootFolder.'/'.$small , ['quality' => 100]);
 
 
             return true;

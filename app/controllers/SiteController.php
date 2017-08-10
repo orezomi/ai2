@@ -128,6 +128,11 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionGallery(){
+        $this->layout = 'plain3';
+        return $this->render('gallery');
+    }
+
     /**
      * Displays about page.
      *

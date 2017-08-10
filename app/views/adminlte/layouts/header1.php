@@ -13,6 +13,7 @@ use yii\bootstrap\NavBar;
 
     <?php
         $staticMenu = [
+            ['label' => 'Gallery', 'url' => ['/site/gallery']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']]
         ];

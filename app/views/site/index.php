@@ -1,8 +1,8 @@
 <?php
 
 /* @var $this yii\web\View */
-
 $this->title = 'All Indonesia Photo Blog';
+
 ?>
 <div class="site-index">
     <div id="layerslider" class="fullsize" style="width:1600px;height:900vh;">
@@ -20,7 +20,6 @@ $this->title = 'All Indonesia Photo Blog';
         ?>
     </div>
 </div>
-
 <?php
 $js = <<<JS
     $('#layerslider').layerSlider({

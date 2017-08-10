@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba13ab9880db4f8c142081e0f5ec57b3",
-    "content-hash": "dce3d99036e1ced02e41a10ab84110ba",
+    "hash": "cb415053a2cccdc5443349661f2f53bc",
+    "content-hash": "b767d3b110a3d619c192526c70d8d0d7",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -151,16 +151,16 @@
         },
         {
             "name": "bower-asset/highcharts",
-            "version": "v5.0.12",
+            "version": "v5.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/highcharts/highcharts-dist.git",
-                "reference": "bd849e327d7a97664e88a98965065a48245e8316"
+                "reference": "4f89cf3f98a557a9512f7ba63f727998d21f3b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/bd849e327d7a97664e88a98965065a48245e8316",
-                "reference": "bd849e327d7a97664e88a98965065a48245e8316",
+                "url": "https://api.github.com/repos/highcharts/highcharts-dist/zipball/4f89cf3f98a557a9512f7ba63f727998d21f3b79",
+                "reference": "4f89cf3f98a557a9512f7ba63f727998d21f3b79",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -322,16 +322,16 @@
         },
         {
             "name": "cebe/markdown",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cebe/markdown.git",
-                "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166"
+                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/markdown/zipball/c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
-                "reference": "c30eb5e01fe021cc5bba2f9ee0eeef96d4931166",
+                "url": "https://api.github.com/repos/cebe/markdown/zipball/25b28bae8a6f185b5030673af77b32e1163d5c6e",
+                "reference": "25b28bae8a6f185b5030673af77b32e1163d5c6e",
                 "shasum": ""
             },
             "require": {
@@ -378,7 +378,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2016-09-14 20:40:20"
+            "time": "2017-07-16 21:13:23"
         },
         {
             "name": "cebe/yii2-gravatar",
@@ -934,16 +934,16 @@
         },
         {
             "name": "kartik-v/dependent-dropdown",
-            "version": "v1.4.5",
+            "version": "v1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/dependent-dropdown.git",
-                "reference": "1f6dbe5bcd144eaaec726409f03be49ce3392269"
+                "reference": "7b715958015d45ea6d43cc7f11060a29488e34fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/dependent-dropdown/zipball/1f6dbe5bcd144eaaec726409f03be49ce3392269",
-                "reference": "1f6dbe5bcd144eaaec726409f03be49ce3392269",
+                "url": "https://api.github.com/repos/kartik-v/dependent-dropdown/zipball/7b715958015d45ea6d43cc7f11060a29488e34fc",
+                "reference": "7b715958015d45ea6d43cc7f11060a29488e34fc",
                 "shasum": ""
             },
             "type": "library",
@@ -977,7 +977,7 @@
                 "option",
                 "select"
             ],
-            "time": "2017-07-11 08:14:34"
+            "time": "2017-07-25 14:32:03"
         },
         {
             "name": "kartik-v/yii2-date-range",
@@ -985,12 +985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-date-range.git",
-                "reference": "ea94a6351759a4ce69be7ee477dab67f6dd4b862"
+                "reference": "d000533672a9b033b856ac779434ba8cd3bba974"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-date-range/zipball/ea94a6351759a4ce69be7ee477dab67f6dd4b862",
-                "reference": "ea94a6351759a4ce69be7ee477dab67f6dd4b862",
+                "url": "https://api.github.com/repos/kartik-v/yii2-date-range/zipball/d000533672a9b033b856ac779434ba8cd3bba974",
+                "reference": "d000533672a9b033b856ac779434ba8cd3bba974",
                 "shasum": ""
             },
             "require": {
@@ -1031,7 +1031,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-05-24 07:30:53"
+            "time": "2017-07-18 08:42:26"
         },
         {
             "name": "kartik-v/yii2-dialog",
@@ -2552,12 +2552,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/miloschuman/yii2-highcharts.git",
-                "reference": "ba5e5c4ccfa31e8265998d0fe980780821beebef"
+                "reference": "68643efc2a8f681ff644676126a047a2f821fa0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/ba5e5c4ccfa31e8265998d0fe980780821beebef",
-                "reference": "ba5e5c4ccfa31e8265998d0fe980780821beebef",
+                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/68643efc2a8f681ff644676126a047a2f821fa0d",
+                "reference": "68643efc2a8f681ff644676126a047a2f821fa0d",
                 "shasum": ""
             },
             "require": {
@@ -2593,7 +2593,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2017-03-17 15:30:28"
+            "time": "2017-07-14 19:28:20"
         },
         {
             "name": "mpdf/mpdf",
@@ -3365,6 +3365,87 @@
             "time": "2016-10-30 11:50:56"
         },
         {
+            "name": "bower-asset/ev-emitter",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/metafizzy/ev-emitter.git",
+                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/metafizzy/ev-emitter/zipball/1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
+                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "ev-emitter.js",
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests",
+                    "sandbox",
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "lil' event emitter",
+            "keywords": [
+                "emitter",
+                "event",
+                "pubsub"
+            ]
+        },
+        {
+            "name": "bower-asset/imagesloaded",
+            "version": "v4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/desandro/imagesloaded.git",
+                "reference": "a8e0dd3a463903014bf8071efece15dcd570b1b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/desandro/imagesloaded/zipball/a8e0dd3a463903014bf8071efece15dcd570b1b9",
+                "reference": "a8e0dd3a463903014bf8071efece15dcd570b1b9",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/ev-emitter": ">=1.0.0,<2.0.0"
+            },
+            "require-dev": {
+                "bower-asset/jquery": ">=1.9,<4.0",
+                "bower-asset/qunit": "~1.20.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "imagesloaded.js",
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "test",
+                    "package.json",
+                    "composer.json",
+                    "node_modules",
+                    "bower_components",
+                    "tests",
+                    "sandbox/",
+                    "contributing.md"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "JavaScript is all like _You images done yet or what?_",
+            "keywords": [
+                "images"
+            ]
+        },
+        {
             "name": "bower-asset/typeahead.js",
             "version": "v0.11.1",
             "source": {
@@ -3390,6 +3471,36 @@
             "extra": {
                 "bower-asset-main": "dist/typeahead.bundle.js"
             }
+        },
+        {
+            "name": "bower-asset/wookmark-jquery",
+            "version": "1.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/germanysbestkeptsecret/Wookmark-jQuery.git",
+                "reference": "91115f2c511cd3160ddc37d6d073f7ea437bbda5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/germanysbestkeptsecret/Wookmark-jQuery/zipball/91115f2c511cd3160ddc37d6d073f7ea437bbda5",
+                "reference": "91115f2c511cd3160ddc37d6d073f7ea437bbda5",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.5.3"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "jquery.wookmark.js",
+                "bower-asset-ignore": [
+                    ".jshintrc",
+                    "**/*.txt"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "jQuery plugin for laying out elements of varying heights in a column-based grid. It also contains support for filtering and sorting items. A lot of examples are included showing how to use all the available options."
         },
         {
             "name": "codeception/base",
@@ -3770,6 +3881,41 @@
             "time": "2017-04-12 18:52:22"
         },
         {
+            "name": "orezomi/wmk",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/Users/harismoaji/Documents/htdocs/wookmark",
+                "reference": "20616a40955b24edc983e755547736efd4094042",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/imagesloaded": "*",
+                "bower-asset/wookmark-jquery": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "orezomi\\wmk\\": ""
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "orezomi",
+                    "email": "harismoaji@gmail.com"
+                }
+            ],
+            "description": "Yii2 Extension for pinterest like layout using Wookmark Jquery Plugin",
+            "keywords": [
+                "extension",
+                "yii2"
+            ]
+        },
+        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0",
             "source": {
@@ -3825,22 +3971,22 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/46f7e8bb075036c92695b15a1ddb6971c751e585",
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
-                "phpdocumentor/type-resolver": "^0.2.0",
+                "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -3866,24 +4012,24 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-09-30 07:12:33"
+            "time": "2017-07-15 11:38:20"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.2.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb"
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
+                "php": "^5.5 || ^7.0",
                 "phpdocumentor/reflection-common": "^1.0"
             },
             "require-dev": {
@@ -3913,7 +4059,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-11-25 06:54:22"
+            "time": "2017-07-14 14:27:02"
         },
         {
             "name": "phpspec/php-diff",
@@ -5063,16 +5209,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "3a4435e79a8401746e8525e98039199d0924b4e5"
+                "reference": "8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/3a4435e79a8401746e8525e98039199d0924b4e5",
-                "reference": "3a4435e79a8401746e8525e98039199d0924b4e5",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0",
+                "reference": "8079a6b3668ef15cdbf73a4c7d31081abb8bb5f0",
                 "shasum": ""
             },
             "require": {
@@ -5116,11 +5262,11 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-06-24 09:29:48"
+            "time": "2017-07-12 13:03:20"
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -5189,7 +5335,7 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -5242,7 +5388,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -5298,7 +5444,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -5354,7 +5500,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -5417,7 +5563,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -5525,7 +5671,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.4",
+            "version": "v3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
@@ -5784,7 +5930,8 @@
         "miloschuman/yii2-highcharts-widget": 20,
         "kartik-v/yii2-grid": 20,
         "kartik-v/yii2-date-range": 20,
-        "kartik-v/yii2-tree-manager": 20
+        "kartik-v/yii2-tree-manager": 20,
+        "orezomi/wmk": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
