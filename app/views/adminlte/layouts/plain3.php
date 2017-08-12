@@ -1,6 +1,7 @@
 <?php
 use app\assets\Layerslider;
 use yii\helpers\Html;
+use app\modules\admin\models\Settings;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -9,6 +10,8 @@ dmstr\web\AdminLteAsset::register($this);
 app\assets\AppAsset::register($this);
 
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
+$setting = Settings::find()->where(['active'=>true])->one();
+$config = json_decode($setting->config,true);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -22,7 +25,7 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed201
 </head>
 <body>
 <?php $this->beginBody() ?>
-	<div class="hold-transition skin-black-light sidebar-collapse">
+	<div class="hold-transition <?=$config['theme']?> sidebar-collapse">
 		<?= $this->render(
 	        'header1.php',
 	        ['directoryAsset' => $directoryAsset]

@@ -1,12 +1,13 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\Modal;
-use app\models\Settings;
+use app\modules\admin\models\Settings;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-
+$setting = Settings::find()->where(['active'=>true])->one();
+$config = json_decode($setting->config,true);
 if (Yii::$app->controller->action->id === 'login') { 
 /**
  * Do not use this code in your template. Remove it. 
@@ -38,7 +39,7 @@ if (Yii::$app->controller->action->id === 'login') {
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="hold-transition skin-black-light sidebar-mini sidebar-collapse">
+    <body class="hold-transition <?=$config['theme']?> sidebar-mini sidebar-collapse">
     <?php $this->beginBody() ?>
     <div class="wrapper">
 
