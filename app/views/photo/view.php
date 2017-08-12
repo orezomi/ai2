@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\widgets\DetailView;
+use kartik\social\Disqus;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Photo */
@@ -25,7 +26,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ]
         ]); 
     ?>
+    <hr />
     <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%'])?>
+    
+    <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -55,6 +59,8 @@ $this->params['breadcrumbs'][] = $this->title;
             ]
         ],
     ]) ?>
-
+    <?=Disqus::widget([
+        'settings' => ['shortname' => 'allindonesia']
+    ]);?>
     </div>
 </div>

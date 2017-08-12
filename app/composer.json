@@ -33,7 +33,8 @@
         "kartik-v/yii2-mpdf": "*",
         "kartik-v/yii2-export": "*",
         "yiisoft/yii2-imagine": "^2.1",
-        "imanilchaudhari/yii2-rrssb": "dev-master"
+        "imanilchaudhari/yii2-rrssb": "dev-master",
+        "kartik-v/yii2-social": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
