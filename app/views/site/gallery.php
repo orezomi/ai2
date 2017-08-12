@@ -5,6 +5,7 @@ use app\modules\admin\models\Tags;
 use yii\helpers\Url;
 
 echo Wookmark::widget();
+$this->title='All Indonesia Photo Blog';
 
 ?>
 
