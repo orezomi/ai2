@@ -11,6 +11,28 @@ use kartik\social\Disqus;
 $this->title = $metadata['title'];
 $this->params['breadcrumbs'][] = ['label' => 'Photos', 'url' => ['site/gallery']];
 $this->params['breadcrumbs'][] = $this->title;
+$this->registerMetaTag([
+    'name'=>'description',
+    'content'=>strip_tags($metadata['desc']),
+]);
+$this->registerMetaTag([
+    'name'=>'keywords',
+    'content'=>implode(', ',array_keys(ArrayHelper::map($model->tags,'tag','tag'))),
+]);
+
+$this->registerMetaTag([
+    'property'=>'og:description',
+    'content'=>strip_tags($metadata['desc']),
+]);
+$this->registerMetaTag([
+    'property'=>'og:title',
+    'content'=>strip_tags($metadata['title'])
+]);
+$this->registerMetaTag([
+    'property'=>'og:image',
+    'content'=>'http://all-indonesia.com/images/'.$model->id_photo.'_'.$metadata['file'],
+]);
+
 ?>
 <div class="row">
     <div class="col-md-12">
