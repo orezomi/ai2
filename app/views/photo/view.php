@@ -17,11 +17,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'title' => $metadata['title'], // i.e. $model->title
             'media' => 'images/'.$model->id_photo.'_'.$metadata['file'], // Media Content
             'networks' => [
-                'Email',
                 'Facebook',
+                'Twitter', 
                 'GooglePlus',
                 'Pinterest',
-                'Twitter', 
+                'Email',
             ]
         ]); 
     ?>

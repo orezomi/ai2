@@ -19,7 +19,23 @@ echo Wookmark::widget();
 </div>
 
 <hr />
+<div style="margin:0px 10px;">
+	<?=\imanilchaudhari\rrssb\ShareBar::widget([
+	        'title' => 'All Indonesia Photo Blog', // i.e. $model->title
+	        'media' => 'http://all-indonesia.com/images/small/7_DSC00566.jpg', // Media Content
+	        'networks' => [
+	            'Facebook',
+	            'Twitter', 
+	            'GooglePlus',
+	            'Pinterest',
+	            'Email',
+	        ]
+	    ]); 
+	?>
+</div>
+
 <div id ="main" role="main">
+
 	<ul id="tiles" class="tiles-wrap animated">
 		<?php
 			$photos = Photo::find()->with('tags')->asArray()->all();
