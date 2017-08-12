@@ -49,7 +49,7 @@ $this->registerMetaTag([
         ]); 
     ?>
     <hr />
-    <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%'])?>
+    <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%','alt'=>$metadata['title'],'title'=>$metadata['title']])?>
     
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
