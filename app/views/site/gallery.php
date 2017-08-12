@@ -37,6 +37,18 @@ $this->title='All Indonesia Photo Blog';
 <div id ="main" role="main">
 
 	<ul id="tiles" class="tiles-wrap animated">
+		<li>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- All Indonesia -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7595366459378772"
+			     data-ad-slot="6736122689"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</li>
 		<?php
 			$photos = Photo::find()->with('tags')->orderBy('id_photo desc')->asArray()->all();
 			foreach ($photos as $photo) {
