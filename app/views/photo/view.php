@@ -13,6 +13,18 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="row">
     <div class="col-md-12">
+    <?=\imanilchaudhari\rrssb\ShareBar::widget([
+            'title' => $metadata['title'], // i.e. $model->title
+            'media' => 'images/'.$model->id_photo.'_'.$metadata['file'], // Media Content
+            'networks' => [
+                'Email',
+                'Facebook',
+                'GooglePlus',
+                'Pinterest',
+                'Twitter', 
+            ]
+        ]); 
+    ?>
     <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%'])?>
 
     <?= DetailView::widget([

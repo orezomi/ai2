@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="box box-danger">
 	<div class="box-body">
 	    <p>
-	        All-Indonesia.com adalah website fotografer amatir <a href="https://web.facebook.com/harismopage/">Harismo Aji</a>
+	        All-Indonesia.com adalah website fotografer amatir <a href="https://web.facebook.com/harismopage/">Harismo Aji</a>.
 	    </p>
 	</div>
 </div>

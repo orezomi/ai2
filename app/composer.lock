@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb415053a2cccdc5443349661f2f53bc",
-    "content-hash": "b767d3b110a3d619c192526c70d8d0d7",
+    "hash": "9765bc3ca930f678ef8f4eb97d090349",
+    "content-hash": "16da754cfaadddbdf2ffeae7b7c1620b",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -785,6 +785,50 @@
                 "image processing"
             ],
             "time": "2015-09-19 16:54:05"
+        },
+        {
+            "name": "imanilchaudhari/yii2-rrssb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imanilchaudhari/yii2-rrssb.git",
+                "reference": "8a8b5b7f7db5c75dec362ac4557dc8a314f21c0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imanilchaudhari/yii2-rrssb/zipball/8a8b5b7f7db5c75dec362ac4557dc8a314f21c0f",
+                "reference": "8a8b5b7f7db5c75dec362ac4557dc8a314f21c0f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "imanilchaudhari\\rrssb\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anil Chaudhari",
+                    "email": "caanil90@gmail.com"
+                }
+            ],
+            "description": "This is a responsive social bar widget for Yii2 projects. ",
+            "keywords": [
+                " extension",
+                " rrssb",
+                " share bar",
+                " social share",
+                "yii2"
+            ],
+            "time": "2016-10-31 17:18:16"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -5931,6 +5975,7 @@
         "kartik-v/yii2-grid": 20,
         "kartik-v/yii2-date-range": 20,
         "kartik-v/yii2-tree-manager": 20,
+        "imanilchaudhari/yii2-rrssb": 20,
         "orezomi/wmk": 20
     },
     "prefer-stable": false,
