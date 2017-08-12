@@ -7,6 +7,7 @@ use Imagine\Image\Box;
 use Imagine\Image\BoxInterface;
 
 
+
 use Yii;
 
 /**

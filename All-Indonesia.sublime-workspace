@@ -535,13 +535,16 @@
 	[
 		"/Users/harismoaji/Documents/htdocs/ai2/app",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/components",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/modules",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/orezomi",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/orezomi/wmk",
 		"/Users/harismoaji/Documents/htdocs/wookmark"
 	],
 	"file_history":
 	[
+		"/Users/harismoaji/Documents/htdocs/ai2/app/composer.json",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/PhotoController.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/605e93a4-76db-4075-be35-2ba596af10f2/home/webmaster/ekios/app/assets/Layerslider.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/605e93a4-76db-4075-be35-2ba596af10f2/home/webmaster/ekios/app/assets/AppAsset.php",
@@ -567,7 +570,6 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/orezomi/wmk/Wookmark.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/bower/wookmark-jquery/example/index.html",
 		"/Users/harismoaji/Documents/htdocs/wookmark/Wookmark.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/composer.json",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/vendor/dmstr/yii2-adminlte-asset/web/AdminLteAsset.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header1.php",

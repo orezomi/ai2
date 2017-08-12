@@ -62,19 +62,22 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = 'plain';
+        $this->layout = 'plain3';
+        return $this->render('gallery');
 
-        $photos = Photo::find()->all();
+        // $this->layout = 'plain3';
 
-        $photoArray = [];
+        // $photos = Photo::find()->all();
 
-        foreach ($photos as $photo) {
-            $photoArray[$photo->id_photo]=json_decode($photo->metadata,true);
-        }
+        // $photoArray = [];
 
-        return $this->render('index',[
-            'photoArray'=>$photoArray
-        ]);
+        // foreach ($photos as $photo) {
+        //     $photoArray[$photo->id_photo]=json_decode($photo->metadata,true);
+        // }
+
+        // return $this->render('index',[
+        //     'photoArray'=>$photoArray
+        // ]);
     }
 
     /**

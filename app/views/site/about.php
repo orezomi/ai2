@@ -10,9 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="box box-danger">
 	<div class="box-body">
 	    <p>
-	        This is the About page. You may modify the following file to customize its content:
+	        All-Indonesia.com adalah website fotografer amatir <a href="https://web.facebook.com/harismopage/">Harismo Aji</a>
 	    </p>
-
-	    <code><?= __FILE__ ?></code>
 	</div>
 </div>

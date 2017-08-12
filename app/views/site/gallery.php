@@ -2,6 +2,7 @@
 use orezomi\wmk\Wookmark;
 use app\modules\admin\models\Photo;
 use app\modules\admin\models\Tags;
+use yii\helpers\Url;
 
 echo Wookmark::widget();
 
@@ -25,7 +26,7 @@ echo Wookmark::widget();
 			foreach ($photos as $photo) {
 				$filters = json_encode(array_column($photo['tags'], 'tag'));
 				$file = (json_decode($photo['metadata'],true));
-				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'"><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
+				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><a href="'.Url::to(['photo/view','id'=>$photo['id_photo']]).'"><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'"></a><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
 			}
 		?>
 	</ul>
