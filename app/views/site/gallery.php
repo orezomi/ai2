@@ -37,11 +37,11 @@ echo Wookmark::widget();
 
 	<ul id="tiles" class="tiles-wrap animated">
 		<?php
-			$photos = Photo::find()->with('tags')->asArray()->all();
+			$photos = Photo::find()->with('tags')->orderBy('id_photo desc')->asArray()->all();
 			foreach ($photos as $photo) {
 				$filters = json_encode(array_column($photo['tags'], 'tag'));
 				$file = (json_decode($photo['metadata'],true));
-				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><a href="'.Url::to(['photo/view','id'=>$photo['id_photo']]).'"><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'"></a><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
+				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><a href="'.Url::to(['/photo/view','id'=>$photo['id_photo']]).'"><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'"></a><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
 			}
 		?>
 	</ul>
