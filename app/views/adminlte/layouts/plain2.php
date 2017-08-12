@@ -2,7 +2,7 @@
 use app\assets\Layerslider;
 use yii\helpers\Html;
 use app\modules\admin\models\Settings;
-
+use kartik\social\FacebookPlugin;
 /* @var $this \yii\web\View */
 /* @var $content string */
 

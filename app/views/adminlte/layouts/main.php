@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Modal;
 use app\modules\admin\models\Settings;
 
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 

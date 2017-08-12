@@ -3,6 +3,7 @@ use app\assets\Layerslider;
 use yii\helpers\Html;
 use app\modules\admin\models\Settings;
 
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
