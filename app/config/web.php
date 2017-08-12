@@ -25,13 +25,13 @@ $config = [
         'gridview' =>  [
             'class' => '\kartik\grid\Module'
         ],
-        'social'=>[
-            'class' => 'kartik\social\Module',
-            'facebook' => [
-                'app_id' => '430945680280078',
-                'app_secret' => '27f83d4e8eb2b54a18a7111769803d4c',
-            ],
-        ],
+        // 'social'=>[
+        //     'class' => 'kartik\social\Module',
+        //     'facebook' => [
+        //         'app_id' => '430945680280078',
+        //         'app_secret' => '27f83d4e8eb2b54a18a7111769803d4c',
+        //     ],
+        // ],
     ],
     'components' => [
         'global' => [

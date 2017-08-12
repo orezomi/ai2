@@ -3,7 +3,6 @@ use orezomi\wmk\Wookmark;
 use app\modules\admin\models\Photo;
 use app\modules\admin\models\Tags;
 use yii\helpers\Url;
-use kartik\social\FacebookPlugin;
 
 echo Wookmark::widget();
 
@@ -18,8 +17,6 @@ echo Wookmark::widget();
 		}
 	?>
 </div>
-<div class="text-center"><?=FacebookPlugin::widget(['type'=>FacebookPlugin::LIKE, 'settings' => ['size'=>'large']]);
- ?></div>
 <hr />
 <div style="margin:0px 10px;">
 	<?=\imanilchaudhari\rrssb\ShareBar::widget([
