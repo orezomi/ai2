@@ -53,6 +53,19 @@ $this->registerMetaTag([
     
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
+    <div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- All Indonesia -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7595366459378772"
+             data-ad-slot="6736122689"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
     <?= DetailView::widget([
         'model' => $model,
         'options' =>[
