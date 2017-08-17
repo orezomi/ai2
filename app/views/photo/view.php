@@ -49,6 +49,7 @@ $this->registerMetaTag([
         ]); 
     ?>
     <hr />
+    <span><i class="fa fa-clock-o"></i> <?=$model->date?></span>
     <?=Html::img('images/'.$model->id_photo.'_'.$metadata['file'],['class'=>'thumbnail','width'=>'100%','alt'=>$metadata['title'],'title'=>$metadata['title']])?>
     
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>

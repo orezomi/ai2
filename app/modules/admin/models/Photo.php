@@ -45,7 +45,7 @@ class Photo extends \yii\db\ActiveRecord
             [['metadata','title','alt','desc','tag'], 'required'],
             [['file','imageFile'], 'required', 'on' => 'create'],
             [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg'],
-            [['metadata','title','file','alt'], 'string'],
+            [['metadata','title','file','alt','date'], 'string'],
         ];
     }
 
@@ -62,6 +62,7 @@ class Photo extends \yii\db\ActiveRecord
             'alt' => 'Alt Text',
             'desc' => 'Description',
             'tag' => 'Tags',
+            'date'=> 'Date',
         ];
     }
 
