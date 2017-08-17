@@ -55,6 +55,13 @@ class SiteController extends Controller
         ];
     }
 
+    public function actionData(){
+        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $photos = Photo::find()->joinWith('tags')->asArray()->all();
+        // print_r($photos);
+        return $photos;
+    }
+
     /**
      * Displays homepage.
      *
@@ -134,6 +141,11 @@ class SiteController extends Controller
     public function actionGallery(){
         $this->layout = 'plain3';
         return $this->render('gallery');
+    }
+
+    public function actionScroll(){ 
+        $this->layout = 'plain3';
+        return $this->render('scroll');
     }
 
     /**

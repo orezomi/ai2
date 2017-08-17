@@ -28,6 +28,8 @@ class Photo extends \yii\db\ActiveRecord
     public $imageFile;
     public $desc;
     public $tag;
+    public $width;
+    public $height;
 
     public static function tableName()
     {

@@ -52,6 +52,7 @@ class PhotoController extends Controller
     {
         $searchModel = new PhotoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->query = Photo::find()->orderBy('id_photo desc');
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -95,8 +96,6 @@ class PhotoController extends Controller
             $metadata['file'] = UploadedFile::getInstance($model, 'imageFile')->name;
             $metadata['alt'] = $model->alt;
             $metadata['desc'] = $model->desc;
-
-
 
             $model->metadata = json_encode($metadata);
 
