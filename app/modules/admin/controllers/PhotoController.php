@@ -97,6 +97,10 @@ class PhotoController extends Controller
             $metadata['alt'] = $model->alt;
             $metadata['desc'] = $model->desc;
 
+            list($width, $height) = getimagesize($model->imageFile->tempName);
+            $metadata['width']=$width;
+            $metadata['height']=$height;
+
             $model->metadata = json_encode($metadata);
 
             if ($model->save()) {
@@ -123,6 +127,7 @@ class PhotoController extends Controller
         $model = $this->findModel($id);
         $oldData = json_decode($model->metadata,true);
         $oldFile = $model->id_photo.'_'.$oldData['file'];
+        $location = Yii::getAlias('@webroot/images/');
 
         if ($model->load(Yii::$app->request->post())) {
 
@@ -132,18 +137,25 @@ class PhotoController extends Controller
             $metadata['alt'] = $model->alt;
             $metadata['file'] = $model->file;
             $metadata['desc'] = $model->desc;
+
+            list($width, $height) = getimagesize($location.$oldFile);
+            $metadata['width']=$width;
+            $metadata['height']=$height;
+
             $imageFile = UploadedFile::getInstance($model, 'imageFile');
 
             if ($imageFile) {
                 $model->imageFile = $imageFile;
                 $metadata['file'] = $imageFile->name;
+                list($width, $height) = getimagesize($imageFile->tempName);
+                $metadata['width']=$width;
+                $metadata['height']=$height;
             }
 
             $model->metadata = json_encode($metadata);
 
             if ($model->save()) {
                 if ($imageFile && $model->upload()) {
-                    $location = Yii::getAlias('@webroot/images/');
                     file_exists($location.$oldFile)?unlink($location.$oldFile):false;
                     file_exists($location.'thumb/'.$oldFile)?unlink($location.'thumb/'.$oldFile):false;
                     file_exists($location.'small/'.$oldFile)?unlink($location.'small/'.$oldFile):false;

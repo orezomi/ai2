@@ -143,6 +143,11 @@ class SiteController extends Controller
         return $this->render('gallery');
     }
 
+    public function actionGallery1(){
+        $this->layout = 'plain3';
+        return $this->render('gallery1');
+    }
+
     public function actionScroll(){ 
         $this->layout = 'plain3';
         return $this->render('scroll');

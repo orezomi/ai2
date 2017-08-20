@@ -33,3 +33,7 @@ config/db.php
 web/index.php
 web/layerslider/*
 web/images
+views/adminlte/layouts/main.php
+views/adminlte/layouts/plain.php
+views/adminlte/layouts/plain2.php
+views/adminlte/layouts/plain3.php
