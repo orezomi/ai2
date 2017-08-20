@@ -9,7 +9,6 @@ use kartik\social\Disqus;
 /* @var $model app\modules\admin\models\Photo */
 
 $this->title = $metadata['title'];
-$this->params['breadcrumbs'][] = ['label' => 'Photos', 'url' => Yii::getAlias('@web')];
 $this->params['breadcrumbs'][] = $this->title;
 $this->registerMetaTag([
     'name'=>'description',
