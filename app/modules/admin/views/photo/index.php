@@ -72,6 +72,22 @@ $this->params['breadcrumbs'][] = $this->title;
                         }
                     ],
                     [
+                        'header'=>'Width',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return isset($metadata['width'])?$metadata['width']:null;
+                        }
+                    ],
+                    [
+                        'header'=>'Height',
+                        'format'=>'raw',
+                        'value'=>function($model){
+                            $metadata = json_decode($model->metadata,true);
+                            return isset($metadata['height'])?$metadata['height']:null;
+                        }
+                    ],
+                    [
                         'header'=>'Tags',
                         'format'=>'raw',
                         'value'=>function($model){
