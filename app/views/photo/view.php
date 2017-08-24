@@ -55,11 +55,11 @@ $this->registerMetaTag([
 
     <div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- All Indonesia -->
+        <!-- allindonesia -->
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-7595366459378772"
-             data-ad-slot="6736122689"
+             data-ad-slot="2624285577"
              data-ad-format="auto"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});

@@ -39,11 +39,11 @@ $this->title='All Indonesia Photo Blog';
 	<ul id="tiles" class="tiles-wrap animated">
 		<li>
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- All Indonesia -->
+			<!-- allindonesia -->
 			<ins class="adsbygoogle"
 			     style="display:block"
 			     data-ad-client="ca-pub-7595366459378772"
-			     data-ad-slot="6736122689"
+			     data-ad-slot="2624285577"
 			     data-ad-format="auto"></ins>
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
@@ -54,7 +54,7 @@ $this->title='All Indonesia Photo Blog';
 			foreach ($photos as $photo) {
 				$filters = json_encode(array_column($photo['tags'], 'tag'));
 				$file = (json_decode($photo['metadata'],true));
-				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><a href="'.Url::to(['/photo/view','id'=>$photo['id_photo']]).'"><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'"></a><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
+				echo '<li class="wookmark-inactive"  data-filter-class=\''.$filters.'\'><a href="'.Url::to(['/photo/view','id'=>$photo['id_photo']]).'"><img src="images/small/'.$photo['id_photo'].'_'.$file['file'].'" width="'.$file['width'].'" height="'.$file['height'].'"></a><h4>'.$file['title'].'</h4><p>'.$file['desc'].'</p></li>';
 			}
 		?>
 	</ul>
