@@ -54,16 +54,16 @@ $this->registerMetaTag([
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
     <div>
-        <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- allindonesia -->
-        <!-- <ins class="adsbygoogle"
+        <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-7595366459378772"
              data-ad-slot="2624285577"
              data-ad-format="auto"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-        </script> -->
+        </script>
     </div>
 
     <?= DetailView::widget([
