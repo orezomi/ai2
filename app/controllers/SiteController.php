@@ -163,4 +163,16 @@ class SiteController extends Controller
         $this->layout = 'plain2';
         return $this->render('about');
     }
+
+    public function actionPrivacypolicy()
+    {
+        $this->layout = 'plain2';
+        return $this->render('privacypolicy');
+    }
+
+    public function actionTos()
+    {
+        $this->layout = 'plain2';
+        return $this->render('tos');
+    }
 }
