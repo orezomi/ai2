@@ -32,6 +32,19 @@ $this->registerMetaTag([
     'content'=>'http://all-indonesia.com/images/'.$model->id_photo.'_'.$metadata['file'],
 ]);
 
+$adsense = '
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- allindonesia -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7595366459378772"
+         data-ad-slot="2624285577"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+';
+
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -54,16 +67,7 @@ $this->registerMetaTag([
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
     <div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- allindonesia -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-7595366459378772"
-             data-ad-slot="2624285577"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <?=$adsense?>
     </div>
 
     <?= DetailView::widget([

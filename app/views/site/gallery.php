@@ -7,6 +7,19 @@ use yii\helpers\Url;
 echo Wookmark::widget();
 $this->title='All Indonesia Photo Blog';
 
+$adsense = '
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- allindonesia -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7595366459378772"
+         data-ad-slot="2624285577"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+';
+
 ?>
 
 <div id="filters" class="text-center"> 
@@ -38,16 +51,7 @@ $this->title='All Indonesia Photo Blog';
 
 	<ul id="tiles" class="tiles-wrap animated">
 		<li>
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- allindonesia -->
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-client="ca-pub-7595366459378772"
-			     data-ad-slot="2624285577"
-			     data-ad-format="auto"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			<?=$adsense?>
 		</li>
 		<?php
 			$photos = Photo::find()->with('tags')->orderBy('id_photo desc')->asArray()->all();
