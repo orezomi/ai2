@@ -67,7 +67,9 @@ $adsense = '
     <div class="text-center"><p><b><?=$metadata['desc']?></b></p></div>
 
     <div>
-        <?=$adsense?>
+        <?php
+        echo $adsense;
+        ?>
     </div>
 
     <?= DetailView::widget([

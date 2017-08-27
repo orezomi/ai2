@@ -51,7 +51,9 @@ $adsense = '
 
 	<ul id="tiles" class="tiles-wrap animated">
 		<li>
-			<?=$adsense?>
+			<?php
+	        echo $adsense;
+	        ?>
 		</li>
 		<?php
 			$photos = Photo::find()->with('tags')->orderBy('id_photo desc')->asArray()->all();

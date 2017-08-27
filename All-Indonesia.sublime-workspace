@@ -541,7 +541,6 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/site",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
@@ -549,13 +548,13 @@
 	],
 	"file_history":
 	[
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo/view.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/gallery.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/about.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/tos.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header1.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/gallery.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/main.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo/view.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/main.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/plain.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/plain2.php",

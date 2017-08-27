@@ -55,6 +55,18 @@ class SiteController extends Controller
         ];
     }
 
+    public function actionTes(){
+        $basePath = \Yii::getAlias('@webroot').'/download/';
+        $url = 'https://www.youtube.com/watch?v=yoZFZsIdfV8';
+        $cmd = 'youtube-dl -o "'.$basePath.'%(id)s.%(ext)s" ' . escapeshellarg($url);
+        exec($cmd, $output, $ret);
+        echo 'output: ';
+        var_export($output);
+        echo "\nret: ";
+        var_export($ret);
+
+    }
+
     public function actionData(){
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
         $photos = Photo::find()->joinWith('tags')->asArray()->all();
