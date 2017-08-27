@@ -68,7 +68,7 @@ $adsense = '
 
     <div>
         <?php
-        // echo $adsense;
+        echo $adsense;
         ?>
     </div>
 
