@@ -58,7 +58,7 @@ class SiteController extends Controller
     public function actionTes(){
         $basePath = \Yii::getAlias('@webroot').'/download/';
         $url = 'https://www.youtube.com/watch?v=yoZFZsIdfV8';
-        $cmd = 'youtube-dl -o "'.$basePath.'%(id)s.%(ext)s" ' . escapeshellarg($url);
+        $cmd = 'youtube-dl '.$url;
         exec($cmd, $output, $ret);
         echo 'output: ';
         var_export($output);

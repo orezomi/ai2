@@ -52,7 +52,7 @@ $adsense = '
 	<ul id="tiles" class="tiles-wrap animated">
 		<li>
 			<?php
-	        echo $adsense;
+	        // echo $adsense;
 	        ?>
 		</li>
 		<?php
