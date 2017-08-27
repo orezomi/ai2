@@ -56,10 +56,11 @@ class SiteController extends Controller
     }
 
     public function actionTes(){
-        $basePath = \Yii::getAlias('@webroot').'/download/';
-        $url = 'https://www.youtube.com/watch?v=yoZFZsIdfV8';
-        $cmd = 'youtube-dl '.$url;
-        exec($cmd, $output, $ret);
+        // $basePath = \Yii::getAlias('@webroot').'/download/';
+        // $url = 'https://www.youtube.com/watch?v=yoZFZsIdfV8';
+        // $cmd = 'youtube-dl '.$url;
+        $cmd = 'ls -la';
+        shell_exec($cmd, $output, $ret);
         echo 'output: ';
         var_export($output);
         echo "\nret: ";

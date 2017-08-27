@@ -540,16 +540,17 @@
 		"/Users/harismoaji/Documents/htdocs/ai2/app",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/site",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site",
 		"/Users/harismoaji/Documents/htdocs/wookmark"
 	],
 	"file_history":
 	[
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo/view.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/gallery1.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/gallery.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/views/photo/view.php",
+		"/Users/harismoaji/Documents/htdocs/ai2/app/.gitignore",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/about.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/tos.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/header.php",
@@ -565,17 +566,14 @@
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/content3.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/header.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/4dec21e6-3b2e-42b8-baf8-fe239b5f722e/home/webmaster/newnos/app/views/adminlte/layouts/header1.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/SiteController.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/content2.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/privacypolicy.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/controllers/PhotoController.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/.gitignore",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain2.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/views/adminlte/layouts/plain3.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/views/photo/index.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/modules/admin/models/Photo.php",
-		"/Users/harismoaji/Documents/htdocs/ai2/app/views/site/gallery1.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/605e93a4-76db-4075-be35-2ba596af10f2/home/webmaster/newnos/app/web/index.php",
 		"/private/var/folders/l1/80w1sqls0mzc2cvz37x8kc640000gn/T/605e93a4-76db-4075-be35-2ba596af10f2/home/webmaster/newnos/app/config/db.php",
 		"/Users/harismoaji/Documents/htdocs/ai2/app/controllers/PhotoController.php",
@@ -693,6 +691,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test",
 			"Ruang Desain",
 			"ruangdesain.com",
 			"roomdesigndecorideas",
@@ -819,8 +818,7 @@
 			"[value",
 			"ReportForm",
 			"mat'=>'decim",
-			"als'=>2",
-			"t'=>'num"
+			"als'=>2"
 		],
 		"highlight": true,
 		"in_selection": false,
